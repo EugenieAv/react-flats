@@ -4,7 +4,25 @@ body {
 
 #root {
   height: 100vh;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.title-bar {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.main-container {
+  width: 90%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  // background: lightblue;
+}
+
+.card-flat {
+  width: 50%;
+  border: 2px solid rgba(100, 100, 100, 0.5);
 }
