@@ -4,17 +4,22 @@ import Card from './card.jsx';
 class FlatsList extends Component {
 
   renderList = () => {
-    return this.props.flats.map(flat => <Card key={flat.imageUrl} url={flat.imageUrl} />);
+    return this.props.flats.map(flat => <Card
+      key={flat.imageUrl}
+      url={flat.imageUrl}
+      name={flat.name}
+      currency={flat.priceCurrency}
+      price={flat.price}
+      lat={flat.lat}
+      lng={flat.lng} />);
   }
 
   render(){
-    console.log(this.props.flats)
     return(
       <div className="flats-list">
-        {this.renderList()};
+        {this.renderList()}
       </div>
     )
-  console.log(renderList)
   }
 }
 
